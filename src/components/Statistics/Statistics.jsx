@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import css from './Statistics.module.css'
 
-export const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
+export default function Statistics ({good, neutral, bad, total, positivePercentage}){
     return <>
         <ul>
             <li  className={css.item}>Good: {good}</li>
@@ -14,13 +14,13 @@ export const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
     
 }
 
-Statistics.propTypes = {
-    // options: PropTypes.arrayOf(
-    //     PropTypes.exact({
-    //         title: PropTypes.string.isRequired,
-    //     })
-    // ),
-    // stats: PropTypes.objectOf(PropTypes.number.isRequired),
-    total: PropTypes.func.isRequired,
-    positivePercentage: PropTypes.func.isRequired,
-}
+// Statistics.propTypes = {
+//     // options: PropTypes.arrayOf(
+//     //     PropTypes.exact({
+//     //         title: PropTypes.string.isRequired,
+//     //     })
+//     // ),
+//     // stats: PropTypes.objectOf(PropTypes.number.isRequired),
+//     total: PropTypes.func.isRequired,
+//     positivePercentage: PropTypes.func.isRequired,
+// }
